@@ -1,0 +1,32 @@
+{
+  "etudiants": [
+    {
+      "id": 1,
+      "nom": "Ahmed",
+      "prenom": "Ali",
+      "filiere": "Informatique",
+      "moyenne": 14
+    },
+    {
+      "id": 2,
+      "nom": "Najib",
+      "prenom": "Abdessamad",
+      "filiere": "Informatique",
+      "moyenne": 20
+    },
+    {
+      "id": 3,
+      "nom": "Karim",
+      "prenom": "Salah",
+      "filiere": "Génie Industriel",
+      "moyenne": 8
+    },
+    {
+      "id": 4,
+      "nom": "Oussama",
+      "prenom": "Niris",
+      "filiere": "Digital Design",
+      "moyenne": 12
+    }
+  ]
+}

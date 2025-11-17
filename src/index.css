@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card-img-top {
+  height: 260px;
+  object-fit: cover;
+}
+
+:root {
+  --accent: #8B5CF6;
+  --accent-hover: #7C3AED;
+  --text: #1f1f1f;
+  --text-light: #6b6b6b;
+  --bg: #ffffff;
+  --bg-soft: #fafafa;
+  --shadow-soft: 0 4px 12px rgba(0,0,0,0.08);
+  --radius: 14px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #ffffff 0%, #d1c5d6 40%, #b193c4 70%);
+}
+
+.navbarr {
+  background: var(--bg);
+  padding: 16px 32px;
+  align-items: center;
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius);
+  margin: 16px;
+}
+
+.navbarr a {
+  text-decoration: none;
+  margin: 0 14px;
+  color: var(--text);
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.navbarr a:hover {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.product-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 18px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  margin: 8px 0;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.product-card p {
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background: var(--accent);
+  border: none;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.product-card button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.products-page {
+  padding: 32px;
+}
+
+.products-page h1 {
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 28px;
+  font-size: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.product-detail {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  max-width: 950px;
+  margin: 40px auto;
+}
+
+.product-detail img {
+  width: 330px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.product-detail-info {
+  flex: 1;
+}
+
+.product-detail-info h2 {
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.product-detail-info p {
+  margin: 8px 0;
+  color: var(--text-light);
+}
+
+.product-detail-info button {
+  background: var(--accent);
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.product-detail-info button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.panier-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.panier-page h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.panier-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.panier-item:last-child {
+  border-bottom: none;
+}
+
+.panier-total {
+  margin-top: 28px;
+  text-align: right;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.panier-btn-buy {
+  background: var(--accent);
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  border: none;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-top: 16px;
+}
+
+.panier-btn-buy:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+
