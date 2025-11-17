@@ -31,7 +31,7 @@ const App = () => {
     
     
     return ( 
-        <BrowserRouter>
+        <BrowserRouter  basename="/Student-Management">
         
         
         <main>
