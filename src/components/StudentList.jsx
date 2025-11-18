@@ -24,7 +24,7 @@ const StudentList = ({etudiantsInitial, setEtudiantsInitial}) => {
     function deleteStudent(id) {
     const realId = Number(id)
 
-    axios.delete(`http://localhost:4000/etudiants/${realId}`)
+    axios.delete(`https://691bbd9a3aaeed735c8e1f3b.mockapi.io/api/v1/etudiants/${realId}`)
         .then(() => {
         setEtudiantsInitial(prev =>
             prev.filter(e => Number(e.id) !== realId)

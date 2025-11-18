@@ -36,7 +36,7 @@ const StudentForm = ({ etudiantsInitial, setEtudiantsInitial }) => {
             moyenne: Number(form.moyenne)
         };
 
-        axios.post("http://localhost:4000/etudiants",newStudent)
+        axios.post("https://691bbd9a3aaeed735c8e1f3b.mockapi.io/api/v1/etudiants",newStudent)
         .then(res=>{
             setEtudiantsInitial(prev=> [...prev, res.data])
         })
